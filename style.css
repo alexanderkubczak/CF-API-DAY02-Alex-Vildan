@@ -1,5 +1,5 @@
 body {
-  margin: 0; }
+  font-size: 40px; }
 
 header {
   background-color: darkred; }
@@ -9,22 +9,39 @@ nav {
   color: white; }
 
 main {
-  background-color: lightgrey; }
+  margin-left: 2rem; }
 
-.articles1 {
+h1 {
+  font-size: 4rem; }
+
+h5 {
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  margin: 0; }
+
+.articleWrapper {
   display: flex;
-  width: 20%; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
-.articles2 {
-  display: flex;
-  flex-wrap: wrap; }
+.article {
+  position: relative;
+  flex: 0 0 48%;
+  margin-bottom: 5rem; }
 
-.bar2 {
-  background-color: green; }
+.image {
+  max-height: 100%;
+  max-width: 100%;
+  height: 20rem;
+  width: 100%; }
 
-.img2 {
-  background-color: blue;
-  width: 10%; }
+.headerLogo {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 30rem;
+  align-items: center; }
 
 footer {
   background-color: black;
