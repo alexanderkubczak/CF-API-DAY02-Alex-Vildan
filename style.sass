@@ -1,26 +1,53 @@
+$desktop: 1200px
 body
 	font-size: 40px
 header
 	background-color: darkred
+	// display: flex
+	// justify-content: space-between
+
 nav
 	background-color: black
+	height: 6rem
+	display: flex
+	justify-content: center
+	align-items: center
+	@media screen and (min-width: $desktop)
+		justify-content: left
+		padding-left: 4rem
+ul
+	display: flex
+	list-style-type: none
+	padding: 0 
+
+li a 
+	text-decoration: none
 	color: white
+	margin-right: 1rem
 main
 	margin-left: 2rem
-
 h1
 	font-size: 4rem
+	background-color: lightgrey
 h5
 	position: absolute
 	background-color: black
 	color: white
-	bottom: 0
 	margin: 0
-
+	bottom: 0
+	display: flex
+	align-items: center
+	height: 8rem
 .articleWrapper
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
+	@media screen and (min-width: $desktop)
+		width: 80%
+
+#popular
+	margin-top: 0
+	width: 100%
 .article
 	position: relative
 	flex: 0 0 48%
@@ -34,10 +61,24 @@ h5
 	margin-top: 2rem
 	margin-left: 2rem
 	width: 30rem
-	align-items: center
+	vertical-align: center
+.headerLogo2
+	display: none
+	@media screen and (min-width: $desktop)
+		display: block
+		float: right
+		margin: 2rem 2rem 0 0 
+.FSWDbanner
+	display: none
+	@media screen and (min-width: $desktop)
+		display: block
 footer
 	background-color: black
 	color: white
-	height: 5rem
+	height: auto
+	text-align: center
+	padding-bottom: 1rem
+	
+
 
 
