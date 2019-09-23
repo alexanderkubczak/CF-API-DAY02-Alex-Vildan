@@ -8,7 +8,13 @@ foreach ($xml->channel->item as $item) {
 echo '<a href="'.$item->link.'" target="_blank">'.$item->title.'</a><br>';
 }
 
+
+
 ?>#
+<!-- 
+<?php  
+	// require_once 'jokes.php';
+?> -->
 
 
 
@@ -32,6 +38,9 @@ echo '<a href="'.$item->link.'" target="_blank">'.$item->title.'</a><br>';
 			</ul>
 		</nav>
 	</header>
+	<p><?php
+		echo '<a href="'.$item1->link.'" target="_blank">'.$item1->title.'</a><br>';
+		?></p>
 	<p class="date">Friday, 12.07.2019</p>
 	<main>
 		<h1>Top news</h1>
